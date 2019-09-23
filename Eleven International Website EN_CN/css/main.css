@@ -555,7 +555,7 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  display: block;
+  display: inline-block;
   height: 6rem;
   padding: 1.5rem 2rem;
   border: 0;
@@ -1280,6 +1280,7 @@ header .header-logo a {
   transition: all 0.5s ease-in-out;
 }
 
+
 /* -------------------------------------------------------------------
  * menu trigger - (_layout.css)
  * ------------------------------------------------------------------- */
@@ -1369,7 +1370,8 @@ header .header-logo a {
   overflow-y: auto;
   z-index: 800;
   -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
@@ -2296,7 +2298,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #testimonials p {
 
   line-height: 1.667;
-  color: black
+  color: black;
   letter-spacing: .3rem;
   position: relative;
   margin-bottom: 4.2rem;
@@ -2341,7 +2343,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   width: 7.4rem;
   height: 7.4rem;
   margin: 0 auto 1.2rem auto;
-  display: block;
+  display: inline-block;
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -2516,7 +2518,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: #959595;
   margin: 6px 6px;
   display: block;
-  -webkit-backface-visibility: visible;
+  /* -webkit-backface-visibility: visible; */
+  backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 50%;
 }
